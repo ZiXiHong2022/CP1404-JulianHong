@@ -4,7 +4,7 @@ CODE_TO_NAME = {"Absolute Zero": "#0048ba", "Acid Green": "#b0bf1a", "AliceBlue"
                 "Aqua": "#00ffff", "Aquamarine1": "#7fffd4", "Army Green": "#4b5320"}
 print(CODE_TO_NAME)
 
-name_color = input(str("Enter color name: ")).upper()
+name_color = input(str("Enter color name: "))
 while name_color != "":
     if name_color in CODE_TO_NAME:
         print(name_color, "is", CODE_TO_NAME[name_color])
