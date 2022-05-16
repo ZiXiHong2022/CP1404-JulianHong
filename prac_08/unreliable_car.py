@@ -4,7 +4,7 @@ class UnreliableCar(Car):
     distance = 0
 
     def __init__(self, name, fuel, reliability):
-        super().__init__()
+        super().__init__(name, fuel)
         self.reliability = reliability
 
     def drive(self, distance):
@@ -16,4 +16,6 @@ class UnreliableCar(Car):
         else:
             return print('Unreliable')
 
+    def __str__(self):
+        return f"car:{self.name} fuel={self.fuel} reliability = {self.reliability} "
 
